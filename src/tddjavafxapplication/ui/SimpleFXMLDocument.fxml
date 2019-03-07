@@ -8,10 +8,10 @@
 
 <AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" 
             xmlns:fx="http://javafx.com/fxml/1" 
-            fx:controller="tddjavafxapplication.ui.FXMLDocumentController">
+            fx:controller="tddjavafxapplication.ui.SimpleFXMLDocumentController">
     <children>
         <Button layoutX="126" layoutY="90" text="Click Me!" 
-                onAction="#handleButtonAction" fx:id="button" />
+                fx:id="button" />
         <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" 
                fx:id="label" />
     </children>

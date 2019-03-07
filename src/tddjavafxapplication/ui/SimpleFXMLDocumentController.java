@@ -6,31 +6,27 @@ package tddjavafxapplication.ui;
  * and open the template in the editor.
  */
 
-import java.net.URL;
-import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
 /**
- *
+ * Simple Java FX UI controller.
  * @author javi
  */
-public class FXMLDocumentController implements Initializable {
+public class SimpleFXMLDocumentController{
     
     @FXML
     private Label label;
-    
     @FXML
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
-    }
-    
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+    private Button button;
+
+    public void initialize() {
+        button.setOnAction(this::handleButtonAction);
     }    
-    
+
+    private void handleButtonAction(ActionEvent event) {
+        label.setText("Hello JavaFX TDD World!!!");
+    }
 }

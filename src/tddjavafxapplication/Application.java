@@ -5,17 +5,26 @@
  */
 package tddjavafxapplication;
 
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 /**
- *
+ * Test Driven Developed class for a JavaFX application.
  * @author javi
  */
-class Application extends javafx.application.Application{
+public class Application extends javafx.application.Application{
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Parent root=FXMLLoader.load(getClass().getResource("ui/SimpleFXMLDocument.fxml"));
+        Scene scene=new Scene(root);
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
     
+    public static void main(String[] args){
+        launch(args);
+    }
 }

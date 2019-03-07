@@ -13,27 +13,11 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
 /**
- *
+ * Suite for test classes.
  * @author javi
  */
 @RunWith(Suite.class)
-@Suite.SuiteClasses({tddjavafxapplication.ui.FXMLDocumentControllerTest.class})
+@Suite.SuiteClasses({tddjavafxapplication.ui.SimpleFXMLDocumentControllerTest.class,
+tddjavafxapplication.ApplicationTest.class})
 public class UiSuite {
-
-    @BeforeClass
-    public static void setUpClass() throws Exception {
-    }
-
-    @AfterClass
-    public static void tearDownClass() throws Exception {
-    }
-
-    @Before
-    public void setUp() throws Exception {
-    }
-
-    @After
-    public void tearDown() throws Exception {
-    }
-    
 }
